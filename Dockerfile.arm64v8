@@ -3,4 +3,4 @@ RUN apk update && apk add curl tar
 ENV VERSION 0.2.10
 
 RUN curl -s -L https://github.com/ww24/lirc-web-api/releases/download/v$VERSION/api_linux_arm.tar.gz | tar xz
-CMD api_linux_arm
+CMD ./api_linux_arm
